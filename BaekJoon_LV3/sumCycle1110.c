@@ -2,18 +2,23 @@
 
 int main(void)
 {
-    int a,b,i=0;
+    int N,b,i=0;
 
-    scanf("%d",&a);
+    scanf("%d",&N);
+    int N10=N/10;
+    int N1=N%10;
+    b=N;
 
-    if (a<10) a=a*10;
-
-    while(b!=a){
-        int a1=a/10;
-        int a2=a%10;
-        b=a2*10+a1+a2;
+    while(1){
+        b=N1*10+(N10+N1)%10;
+        N10=b/10;
+        N1=b%10;
         i++;
-    }
+
+        if(b==N)break;
+    }    
 
     printf("%d",i);
+
+    return 0;
 }
