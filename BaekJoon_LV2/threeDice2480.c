@@ -7,14 +7,13 @@ int main(void)
 
     scanf("%d %d %d",&a,&b,&c);
 
-    if((a==b)&&(b==c))      //3개 모두 같음
+    if(a==b && b==c)      //3개 모두 같음
         printf("%d",10000+a*1000);
 
-    else if(((a!=b)&&(b!=c))&&((a!=b)&&(c!=a))){        //3개 모두 다름
+    else if(a!=b && b!=c && c!=a){        //3개 모두 다름
         int max=a;
         if((b>max)&&(b>=c))max=b;
         else if((c>max)&&(c>=b))max=c;
-        else ;
         printf("%d",max*100);
     }
     else{
