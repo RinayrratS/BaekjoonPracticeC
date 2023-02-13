@@ -21,7 +21,6 @@ int main(void)
             else if(a[j]=='X'){
                 score=0;
             }
-            else if(a[j]=='\n')break;
         }printf("%d\n",total);
     }
 
