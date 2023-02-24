@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-int isPrime(int A, arr)
-
 int main(void){
     int T;
     scanf("%d", &T);
